@@ -10,6 +10,10 @@ repositories {
     	url = "https://maven.dblsaiko.net/"
     }
 	maven {
+		name = "TerraformersMC"
+		url = "https://maven.terraformersmc.com/"
+	}
+	maven {
 		name = "CurseForge"
 		url = "https://minecraft.curseforge.com/api/maven"
 	}
@@ -25,5 +29,5 @@ dependencies {
 	compileOnly "org.apiguardian:apiguardian-api:1.0.0"
 	compileOnly "com.google.code.findbugs:jsr305:3.0.2"
 	
-	modApi ("io.github.prospector:modmenu:${project.modmenu_version}") { transitive = false }
+	modApi ("com.terraformersmc:modmenu:${project.modmenu_version}") { transitive = false }
 }
